@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.top{
+background-color:#FF9999;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Style the header */
+header {
+
+  padding: 70px 30px 30px 200px;
+ 
+  font-size: 35px;
+ 
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 70%;
+  height: 300px; /* only for demonstration, should be removed */
+  background:yellow;
+  padding: 20px;
+}
+
+
+article {
+text-align:center;
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.borderr{
+border:2px solid black;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div style="border:2px solid black;padding:8px;"
+<div class="borderr">
+<div class="top">
+<header>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</header>
+<p style=" text-align: center; padding-bottom:10px;">In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+</div>
+
+<section class="borderr">
+  <nav>
+   <img src="Assignment2-1.jpg"style="width:100%;height:100%;">
+  </nav>
+  
+  <article class="borderr" style="background-color:#ECECFB;">
+  <img class="center"src="Assignment2-2.jpg"style="width:20%;height:40%">
+    <h1>About Me</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    
+  </article>
+</section>
+
+
+</div>
+</div>
+</body>
+</html>
