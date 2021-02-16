@@ -6,7 +6,10 @@ color:#80007E;
 font-weight:bold;
 
 }
-
+.Content{
+font-size:1.1em;
+font-weight:normal;
+}
 /*Applying Sans-Serif to Heading 1 only*/
 h1{font-family:sans-serif;}
 
@@ -36,7 +39,7 @@ border-right: 20px solid Black;
 div{
 float:left;
 box-sizing: border-box;
-width:85%;
+width:82%;
 padding-left:60px;
 
 }
