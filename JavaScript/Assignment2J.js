@@ -1,4 +1,16 @@
-let Max=100;
+function isSafe(){
+
+let m=true;
+let num1 = Number(document.getElementById("firstNumber").value);
+let num2 = Number(document.getElementById("secondNumber").value);
+if(Number.isSafeInteger(num1)&&Number.isSafeInteger(num2))return true;
+else{
+        alert("Input Valid Integer");
+}
+return false;
+
+}
+
 
 function multiplyBy()
 {
@@ -11,13 +23,7 @@ function divideBy()
 { 
         let num1 = document.getElementById("firstNumber").value;
         let num2 = document.getElementById("secondNumber").value;
-        if (num1 > MAX||num2 >MAX) {
-                throw new Error(`At most ${MAX} allowed`);
-              }
-catch(e){
-        document.getElementById("result").innerHTML=e;
-}
-
+        
                 result = +(num1) / +(num2);
               if (isFinite(result)) {
                 document.getElementById("result").innerHTML = result;   
@@ -29,8 +35,8 @@ catch(e){
 
 function Add() 
 { 
-        let num1 = document.getElementById("firstNumber").value;
-        let num2 = document.getElementById("secondNumber").value;
+        let num1 = Number(document.getElementById("firstNumber").value);
+        let num2 = Number(document.getElementById("secondNumber").value);
 document.getElementById("result").innerHTML = num1 + num2;
 }
 
@@ -47,7 +53,7 @@ function Operation() {
           
         for(i = 0; i < a.length; i++) { 
             if(a[i].checked){
-
+		if(isSafe()){
                 switch (a[i].value) {
                         case '*':
                                 multiplyBy();
@@ -60,7 +66,7 @@ function Operation() {
                           break;
                         case '-':
                            Subtract();
-                      }
+                      }}
             }
         } 
     } 
