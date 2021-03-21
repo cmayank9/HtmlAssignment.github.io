@@ -1,0 +1,36 @@
+
+<html>
+<head>
+<title>{{title}}</title>
+<style>
+
+a{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    text-align: center;
+    background-color: #00cc99;
+    color:white;
+    text-decoration: none;
+    
+    }
+
+</style>
+</head>
+ <body>
+<a href="/">Home</a>
+<h1>Users</h1>
+{{#if hasUsers }}
+<ul>{{#each users}}
+    <li>{{this.UserName}}</li>
+    {{/each}}
+</ul>
+{{else}}
+  <h2>No Users Found!!</h2>
+{{/if}}
+
+ </body>   
+</html>
+
+
+
