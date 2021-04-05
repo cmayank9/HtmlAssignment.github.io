@@ -5,9 +5,78 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:#2e0e02;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.column {
+  float: left;
+  width: 15%;
+  height: 30%;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  
+  text-align: center;
+  background-color: #94c9a9;
+}
+
+/* .fakeimg {
+  height:100px;
+  background-color: #aaa;
+  width: 50%;
+  padding: 20px;
+} */
+
+/* .fakeimg {
+  height:100px;
+  background-color: #aaa;
+  padding: 20px;
+} */
+
+
+.button-e{
+width:70%;
+height:30px;
+ border: none;
+ text-align:center;
+}
+.button-d{
+  color:white;
+width:30%;
+height:30px;
+ border: none;
+ text-align:center;
+ background-color: #e1aa7d;
+}
+
+
+.button-e:hover {
+ background-image: linear-gradient(to right, rgb(56, 77, 72)80%,rgb(241, 241, 241) );
+  color: white;
+  text-align:center;
+}
+
+.button-d:hover {
+  background-color: red;
+   color: white;
+   text-align:center;
+ }

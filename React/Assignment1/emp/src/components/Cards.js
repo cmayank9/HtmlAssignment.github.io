@@ -1,14 +1,25 @@
 import React from 'react'
 import Card from './Card'
-function Cards({data}) {
-    console.log(data);
+function Cards({data,setdata}) {
+    
     return (
-        <ul>
-        {data.map((metadata)=>(
-            <Card key={metadata.id} text={metadata.text}/>   
-        ))}
 
-        </ul>
+        <div className="main">
+    <h2>List Of Employees</h2>
+    
+<div>
+{data.map((metadata)=>(
+            <Card  
+            metadata={metadata}
+            data={data} setdata={setdata}
+             key={metadata.id} name={metadata.name} birth={metadata.birth} 
+             dep={metadata.dep} exp={metadata.exp}/>   
+        ))}
+</div>
+</div>
+
+
+        
         
     );
 }
