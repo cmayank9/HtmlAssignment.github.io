@@ -24,7 +24,7 @@ function Form({nameText, setnameText, birthText,setbirthText, depText,setdepText
         if (!Number(num)) {
             alert("Please Use Numbers Only");
         }
-        else setexpText(e.target.value);
+        else setexpText(num);
     }
     
     const submitHandler=(e)=>{
@@ -39,6 +39,7 @@ function Form({nameText, setnameText, birthText,setbirthText, depText,setdepText
         setexpText('');
     };
     return (
+    <div className="side">
         <form>  
             Employee Name: <input onChange={nameHandler} type="text" className="fname" value={nameText} placeholder="Employee Name"/><br></br>
             DOB: <input onChange={birthHandler} type="date" className="fname" value={birthText}/><br></br>
@@ -46,6 +47,7 @@ function Form({nameText, setnameText, birthText,setbirthText, depText,setdepText
             Experience in Years<input onChange={expHandler} type="text" className="fname" value={expText} placeholder="in Numbers Only"/><br></br>
             <button onClick={submitHandler} type="button">Submit</button>
         </form> 
+        </div>
     );
 }
 

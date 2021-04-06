@@ -11,14 +11,14 @@ function App() {
   const [expText,setexpText]=useState('');
   const [data, setdata]=useState([]);
   return (
+   <div>
+    <h1>Employee Management App</h1>
     <div className="App">
-      <h1>To do app</h1>
-
       <Form nameText={nameText} birthText={birthText} setbirthText={setbirthText} 
       depText={depText} setdepText={setdepText} expText={expText} setexpText={setexpText}
       setnameText={setnameText} data={data} setdata={setdata}/>
       <Cards data={data} setdata={setdata}/>
-
+    </div>
     </div>
   );
 }

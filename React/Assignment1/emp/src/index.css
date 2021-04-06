@@ -13,14 +13,25 @@ code {
     monospace;
 }
 
+.App{
 
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  
+}
 
+.side {
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
 .main {   
   -ms-flex: 70%;
   flex: 70%;
   background-color: white;
   padding: 20px;
-  text-align: center;
+  
 }
 
 
