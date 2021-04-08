@@ -17,7 +17,9 @@ function App() {
       <Form nameText={nameText} birthText={birthText} setbirthText={setbirthText} 
       depText={depText} setdepText={setdepText} expText={expText} setexpText={setexpText}
       setnameText={setnameText} data={data} setdata={setdata}/>
-      <Cards data={data} setdata={setdata}/>
+      <Cards data={data} setdata={setdata} nameText={nameText} birthText={birthText} setbirthText={setbirthText} 
+      depText={depText} setdepText={setdepText} expText={expText} setexpText={setexpText}
+      setnameText={setnameText}/>
     </div>
     </div>
   );

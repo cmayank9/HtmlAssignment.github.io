@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Card({name, birth, dep, exp, data, setdata,metadata}) {
+function Card({name, birth, dep, exp, data, setdata,metadata,
+  setnameText, setbirthText, setdepText, setexpText}) {
 
 const deleteHandler=()=>{
 
@@ -8,8 +9,20 @@ setdata(data.filter(el=>el.id!==metadata.id));
 };
 
 const editHandler=()=>{
-    setdata(data.filter(el=>el.id!==metadata.id));
+  const filtereditem=data.filter(el=>el.id!==metadata.id);
+  setdata([...filtereditem, 
+  ]);
+  setnameText(name); 
+  setbirthText(birth);
+  setdepText(dep);
+  setexpText(exp);
+
+ 
 }
+
+
+
+
     return (
 
 <div className="column">
